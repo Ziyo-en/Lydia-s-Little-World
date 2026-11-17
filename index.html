@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lydia's Enchanted World 🎀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sparkles" id="sparkles"></div>
+
+<header class="topbar">
+  <a class="logo" href="#home">🎀 Lydia's World</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  <nav id="navigation">
+    <a href="#home">Home</a>
+    <a href="#dino">Dino</a>
+    <a href="#bunny">Bunny</a>
+    <a href="#kitty">Kitty</a>
+    <a href="#jokes">Jokes</a>
+    <a href="#surprises">Gifts</a>
+    <a href="#secretCodeSection">Secret</a>
+    <a href="#diary">Diary</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero section" id="home">
+  <div class="hero-content">
+    <span class="eyebrow">✧ A little universe made with love ✧</span>
+    <h1>Welcome to<br><span>Lydia's</span><br>Enchanted World</h1>
+    <p>A tiny magical kingdom filled with silly dinosaurs, sleepy bunnies, cute cats, sweet jokes and fireworks.</p>
+    <button class="main-button" id="heroFireworkBtn">Launch Fireworks ✨</button>
+    <div class="small-note">Made especially for one extraordinary human. 💗</div>
+  </div>
+  <div class="hero-art">
+    <div class="moon">☾</div>
+    <span class="floating-star s1">✦</span>
+    <span class="floating-star s2">✧</span>
+    <span class="floating-star s3">⋆</span>
+    <div class="castle">🏰</div>
+    <div class="hero-bunny">🐰</div>
+    <div class="hero-caption">Once upon a time...</div>
+  </div>
+</section>
+
+<!-- DINO SECTION -->
+<section class="section feature-section" id="dino">
+  <div class="section-heading">
+    <span class="eyebrow">✧ The most suspicious creature ✧</span>
+    <h2>Dino Kingdom 🦖</h2>
+    <p>He has something VERY important to tell you.</p>
+  </div>
+  <div class="feature-card dino-card">
+    <div class="big-character" id="dinoCharacter">🦖</div>
+    <div class="speech-bubble" id="dinoSpeech">Hello, Lydia! Click the button to hear a dino secret.</div>
+    <h3>Sir Pickles the Third</h3>
+    <p class="muted">Professional troublemaker. Amateur scientist.</p>
+    <button class="main-button" id="dinoButton">Talk to Dinosaur 🦖</button>
+  </div>
+</section>
+
+<!-- BUNNY GAME -->
+<section class="section feature-section" id="bunny">
+  <div class="section-heading">
+    <span class="eyebrow">✧ A very important mission ✧</span>
+    <h2>The Runaway Bunny 🐰</h2>
+    <p>Click the bunny 5 times to catch it and launch fireworks!</p>
+  </div>
+  <div class="feature-card bunny-card">
+    <div class="bunny-stage" id="bunnyStage">
+      <button class="bunny-target" id="bunnyTarget" aria-label="Catch the bunny">🐰</button>
+    </div>
+    <p id="bunnyMessage">Psst... catch me if you can! (0/5)</p>
+    <button class="secondary-button" id="resetBunny">Reset bunny ↻</button>
+  </div>
+</section>
+
+<!-- KITTY CORNER -->
+<section class="section feature-section" id="kitty">
+  <div class="section-heading">
+    <span class="eyebrow">✧ Pure cozy magic ✧</span>
+    <h2>Kitty Corner 🐱</h2>
+    <p>Give the kitty a gentle pat and listen to it purr.</p>
+  </div>
+  <div class="feature-card kitty-card">
+    <div class="big-character" id="kittyCharacter">😺</div>
+    <div class="speech-bubble" id="kittySpeech">Purr... Click the button below to pet me!</div>
+    <h3>Professor Whiskers</h3>
+    <p class="muted">Master of naps and midnight zoomies.</p>
+    <button class="main-button" id="kittyButton">Pet the kitty 🐾</button>
+  </div>
+</section>
+
+<!-- CUTE JOKES GENERATOR -->
+<section class="section feature-section" id="jokes">
+  <div class="section-heading">
+    <span class="eyebrow">✧ Guaranteed smiles ✧</span>
+    <h2>Cute Joke Machine 🧁</h2>
+    <p>Press the button for a fresh dose of sweetness and humor.</p>
+  </div>
+  <div class="feature-card" style="background: linear-gradient(135deg, #fff0f7, #f5ebff);">
+    <div class="big-character" id="jokeEmoji">😂</div>
+    <div class="speech-bubble" id="jokeDisplay">Why don't stars fall? Because they don't want to miss your smile! ⭐</div>
+    <br>
+    <button class="main-button" id="newJokeBtn">Tell me another joke! 🎀</button>
+  </div>
+</section>
+
+<!-- SURPRISE BOXES & FIREWORKS -->
+<section class="section feature-section" id="surprises">
+  <div class="section-heading">
+    <span class="eyebrow">✧ Handle with curiosity ✧</span>
+    <h2>Surprise Boxes 🎁</h2>
+    <p>Click any box to open a gift with fireworks!</p>
+  </div>
+  <div class="gift-grid">
+    <button class="gift-box" data-gift="kitty">
+      <span>🎁</span><strong>Kitty Gift</strong><small>Open me!</small>
+    </button>
+    <button class="gift-box" data-gift="fireworks">
+      <span>🎆</span><strong>Big Fireworks</strong><small>Launch show!</small>
+    </button>
+    <button class="gift-box" data-gift="joke">
+      <span>🧁</span><strong>Sweet Compliment</strong><small>Click here</small>
+    </button>
+    <button class="gift-box" data-gift="dino">
+      <span>🦖</span><strong>Dino Hug</strong><small>Rawr!</small>
+    </button>
+  </div>
+</section>
+
+<!-- SECRET CODE LOCK -->
+<section class="section feature-section" id="secretCodeSection">
+  <div class="section-heading">
+    <span class="eyebrow">✧ For curious explorers only ✧</span>
+    <h2>Secret Lock 🔐</h2>
+    <p>Enter the secret code to unlock a hidden treasure (Hint: <strong>MAGIC</strong>).</p>
+  </div>
+  <div class="feature-card secret-card">
+    <div class="code-box">
+      <input type="text" id="secretCodeInput" placeholder="Type MAGIC here..." autocomplete="off">
+      <button class="main-button" id="checkCodeBtn">Unlock ✨</button>
+    </div>
+    <div id="unlockedSecret" class="hidden" style="margin-top: 25px;">
+      <div class="big-character">🦄</div>
+      <h3>Code Accepted!</h3>
+      <p class="secret-note">You are officially the most extraordinary human in this entire galaxy. Never forget how awesome you are! 💗✨</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIARY -->
+<section class="section feature-section" id="diary">
+  <div class="section-heading">
+    <span class="eyebrow">✧ A quiet little corner ✧</span>
+    <h2>Magic Diary 📖</h2>
+    <p>Write a thought, a memory or a tiny story.</p>
+  </div>
+  <div class="feature-card diary-card">
+    <label for="diaryInput">Dear diary...</label>
+    <textarea id="diaryInput" placeholder="Today I discovered something magical..."></textarea>
+    <button class="main-button" id="saveDiary">Save my thought 💗</button>
+    <p id="diaryStatus" style="margin-top: 10px; color: #c96e96; font-weight: 700;"></p>
+    <div id="diaryEntries" class="diary-entries"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bow">🎀</div>
+  <h2>And they lived happily ever after...</h2>
+  <p>A little world made especially for Lydia. 💗</p>
+  <button class="top-button" id="backToTop">Back to the castle ↑</button>
+</footer>
+
+</main>
+
+<div class="toast" id="toast"></div>
+
+<!-- MODAL FOR GIFTS -->
+<div class="modal hidden" id="giftModal">
+  <div class="modal-card">
+    <button class="modal-close" id="closeGift">×</button>
+    <div class="gift-animation" id="giftAnimation">🎁</div>
+    <h2 id="giftTitle">A little surprise!</h2>
+    <p id="giftMessage"></p>
+    <button class="main-button" id="giftAgain">Launch more fireworks 🎆</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
